@@ -12,7 +12,10 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Admin' }).click();
   await page.getByRole('link', { name: 'PIM' }).click();
   await page.getByRole('link', { name: 'Leave' }).click();
-  await page.locator('#app').click();
+  // await page.locator('#app').click();
+
+  await page.getByRole('link', { name: 'Time' }).click();
+
   await page.getByRole('link', { name: 'Time' }).click();
   await page.getByRole('link', { name: 'Recruitment' }).click();
   await page.getByRole('link', { name: 'Recruitment' }).click();
